@@ -1,0 +1,278 @@
+{
+    "questions": [
+        {
+            "title": "What is the meaning of life?",
+            "choice": [
+                "42",
+                "43",
+                "44",
+                "45"
+            ],
+            "answer": "42"
+        },
+        {
+            "title": "1 0 1001 100",
+            "choice": [
+                "4901",
+                "4902",
+                "4903",
+                "4904"
+            ],
+            "answer": "4901"
+        },
+        {
+            "title": "To be or not__",
+            "choice": [
+                "2B",
+                "A2",
+                "9S",
+                "WTF"
+            ],
+            "answer": "2B"
+        },
+        {
+            "title": "How HAL",
+            "choice": [
+                "IXV",
+                "9000",
+                "Im Fine",
+                "Alien"
+            ],
+            "answer": "9000"
+        },
+        {
+            "title": "Shadow Water Illusion",
+            "choice": [
+                "Moon",
+                "Mirror",
+                "Sea",
+                "Oasis"
+            ],
+            "answer": "Mirror"
+        },
+        {
+            "title": "Cat [SAD]",
+            "choice": [
+                "Where is Food?",
+                "I eat recently!",
+                "I want more food.",
+                "I eat all the food."
+            ],
+            "answer": "I want more food."
+        },
+        {
+            "title": "I'm not a Robot",
+            "choice": [
+                "Ok",
+                "Agree",
+                "Submit",
+                "Really.."
+            ],
+            "answer": "Submit"
+        },
+        {
+            "title": "[  ]",
+            "choice": [
+                "Re:Zero − Starting Life in Another World",
+                "No Game No Life",
+                "Code Geass: Lelouch of the Rebellion",
+                "It's just a bracket"
+            ],
+            "answer": "No Game No Life"
+        },
+        {
+            "title": "Who is [The one wing angel]",
+            "choice": [
+                "Sephiroth",
+                "Lucifer",
+                "Kelfka",
+                "Gabriel"
+            ],
+            "answer": "Sephiroth"
+        },
+        {
+            "title": "Randomized",
+            "choice": [
+                "11221122",
+                "123581119",
+                "108421",
+                "153548742"
+            ],
+            "answer": "153548742"
+        },
+        {
+            "title": "If there are 6 apples and you take away 4, how many do you have? ",
+            "choice": [
+                "2",
+                "4",
+                "0",
+                "6"
+            ],
+            "answer": "4"
+        },
+        {
+            "title": "DOWN -> RIGHT -> SQUARE",
+            "choice": [
+                "Hadouken",
+                "Shoryuken",
+                "Getsuga Tenshou",
+                "Shouken"
+            ],
+            "answer": "Hadouken"
+        },
+        {
+            "title": "_ _ _ _",
+            "choice": [
+                "DOG",
+                "CAT",
+                "BIRD",
+                "ANT"
+            ],
+            "answer": "BIRD"
+        },
+        {
+            "title": "Click the Different",
+            "choice": [
+                "Different",
+                "Similar",
+                "Unique",
+                "Contrast"
+            ],
+            "answer": "Different"
+        },
+        {
+            "title": "Which is the hidden 27th alphabet?",
+            "choice": [
+                "$",
+                "&",
+                "#",
+                "@"
+            ],
+            "answer": "&"
+        },
+        {
+            "title": "CandY ?",
+            "choice": [
+                "C and Y",
+                "X and Y",
+                "A and E",
+                "E and J"
+            ],
+            "answer": "C and Y"
+        },
+        {
+            "title": "on. fo. fi.. ei...",
+            "choice": [
+                "1547",
+                "1458",
+                "1458",
+                "1111"
+            ],
+            "answer": "1458"
+        },
+        {
+            "title": "What is the truth",
+            "choice": [
+                "question.json",
+                "data.json",
+                "quiz.json",
+                "repo.json"
+            ],
+            "answer": "data.json"
+        },
+        {
+            "title": "--Title--",
+            "choice": [
+                "The Simple Quiz",
+                "The Title",
+                "The Impossible Quiz",
+                "The Random Quiz"
+            ],
+            "answer": "The Simple Quiz"
+        },
+        {
+            "title": "In [Death March to the Parallel World Rhapsody], what level do our programmer start with",
+            "choice": [
+                "310",
+                "1",
+                "100",
+                "99"
+            ],
+            "answer": "1"
+        },
+        {
+            "title": "R[1913]",
+            "choice": [
+                "MCXIII",
+                "MCMXIII",
+                "MMMXIII",
+                "MCMEIII"
+            ],
+            "answer": "MCMXIII"
+        },
+        {
+            "title": "There are two kind of people in the world: those who can extrapolate",
+            "choice": [
+                "that's it?",
+                "and those who's not",
+                "from incomplete data",
+                "The question is not complete."
+            ],
+            "answer": "and those who's not"
+        },
+        {
+            "title": "How many are the secret ingredients of KFC?",
+            "choice": [
+                "10",
+                "11",
+                "12",
+                "13"
+            ],
+            "answer": "11"
+        },
+        {
+            "img": "https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg",
+            "title": "what is the official name of this image?",
+            "choice": [
+                "The Grandest Pipe",
+                "This Is Not a Pipe",
+                "The Treachery of Image",
+                "Gentleman's Inventory"
+            ],
+            "answer": "The Treachery of Image"
+        },
+        {
+            "img": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Tsunami_by_hokusai_19th_century.jpg",
+            "title": "what is the official name of this image?",
+            "choice": [
+                "The Great Wave off Kanagawa",
+                "The Great Wave off Kanazawa",
+                "The Great Wave off Kanarawa",
+                "The Great Wave off Kanagara"
+            ],
+            "answer": "The Great Wave off Kanagawa"
+        },
+        {
+            "img": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Sealand-sky.jpg",
+            "title": "What is this?.",
+            "choice": [
+                "A Country",
+                "A Battle station",
+                "A Factory",
+                "A Oil Site"
+            ],
+            "answer": "A Country"
+        },
+        {
+            "img": "https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png",
+            "title": "What is the name of GitHub logo?",
+            "choice": [
+                "The Alien Cat",
+                "The Octo Cat",
+                "The Alen Cat",
+                "The Ninja Cat"
+            ],
+            "answer": "The Octo Cat"
+        }
+    ]
+}
