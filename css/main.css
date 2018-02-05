@@ -173,15 +173,6 @@ p {
     overflow: hidden;
 }
 
-.flash-btn:hover {
-    color: #fff;
-}
-
-.flash-btn:hover:after {
-    top: 0;
-    height: 100%;
-}
-
 .game-box {
     display: none;
     height: 0;
@@ -296,6 +287,7 @@ p {
 }
 
 .question-box img {
+    border: 2px solid #111;
     width: 100px;
     height: 75px;
     margin: 0 10px;
@@ -323,11 +315,6 @@ p {
     margin: 10px auto;
     cursor: pointer;
     font-weight: 400;
-}
-
-.choice-box:hover {
-    color: #0074D9;
-    background: #181818;
 }
 
 #time {
@@ -491,9 +478,25 @@ p {
     #emote {
         font-size: 200%;
     }
-
-    /* Style adjustments for viewports that meet the condition */
 }
+
+@media only screen and (min-width: 1200px) {
+    .flash-btn:hover {
+        color: #fff;
+    }
+
+    .flash-btn:hover:after {
+        top: 0;
+        height: 100%;
+    }
+
+    .choice-box:hover {
+        color: #0074D9;
+        background: #181818;
+    }
+}
+
+/* Style adjustments for viewports that meet the condition */
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),

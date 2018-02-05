@@ -53,7 +53,10 @@ function advanceStage() {
         shuffle(current_question.choice);
         showQuestion(current_question);
         clearInterval(timerInterval);
-        timerInterval = setInterval(timerRunner, 10);
+        setTimeout(
+            function () {
+                timerInterval = setInterval(timerRunner, 10);
+            }, 2000);
     }
 }
 
