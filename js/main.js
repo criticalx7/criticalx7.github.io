@@ -10,7 +10,7 @@ let question_done = 0;
 let question_amount = 10;
 $(document).ready(function () {
     let buttonBox = $('#button-box');
-    buttonBox.delay(300).fadeIn(600);
+    buttonBox.delay(300).fadeIn(400);
     buttonBox.find('button').on('click', function () {
         switch (this.id) {
             case 'easy':
@@ -24,8 +24,8 @@ $(document).ready(function () {
     });
 
     $("#back-menu").on('click', function () {
-        $("#result-box").height("0%").fadeOut(600);
-        $('#menu-box').slideDown('slow');
+        $("#result-box").height("0%").fadeOut(400);
+        $('#menu-box').slideDown(400);
     });
 });
 
@@ -35,8 +35,8 @@ function prepareApp() {
     time = 100;
     score = 0;
     life = 3;
-    $('#menu-box').slideUp('slow');
-    $('.game-box').height('100%').fadeIn(1200);
+    $('#menu-box').slideUp(400);
+    $('.game-box').height('100%').fadeIn(400);
     $.getJSON('resources/data.json', function (data) {
         question_set = data.questions;
         playTimeInterval = setInterval(playTimeRunner, 1000);
@@ -53,10 +53,7 @@ function advanceStage() {
         shuffle(current_question.choice);
         showQuestion(current_question);
         clearInterval(timerInterval);
-        setTimeout(
-            function () {
-                timerInterval = setInterval(timerRunner, 10);
-            }, 2000);
+        timerInterval = setInterval(timerRunner, 10);
     }
 }
 
@@ -66,7 +63,7 @@ function prepareNext() {
             $('#emote').removeClass("damage-text");
             $('#life-bar').removeClass("damage-block");
             console.log("remove shake");
-        }, 1000);
+        }, 500);
     $('#time').removeClass('flash');
     time = 100;
     question_done++;
@@ -146,7 +143,7 @@ function showResult() {
     } else {
         resultEmote.text('＼（＾▽＾）／');
     }
-    $('.game-box').fadeOut();
+    $('.game-box').fadeOut(400);
     $('#playtime-r').text("Play time: " + playTime + 's')
     $("#score-r").html("SCORE - " + score + '/' + question_amount);
     resultBox.height('100%').fadeIn(1200);
