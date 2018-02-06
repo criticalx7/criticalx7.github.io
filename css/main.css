@@ -9,7 +9,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-*, *::after, *::before {
+*, *:after, *:before {
     box-sizing: inherit;
 }
 
@@ -146,6 +146,7 @@ p {
     border: none;
     font-weight: 500;
     background: transparent;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     position: relative;
     margin: 20px auto;
@@ -169,6 +170,7 @@ p {
     left: 0;
     z-index: -1;
     background: #111;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     overflow: hidden;
 }
@@ -187,14 +189,19 @@ p {
     border: 2px solid #111;
     background: transparent;
     position: relative;
+    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     text-align: center;
 }
 
 .header {
     margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .header div {
@@ -216,49 +223,123 @@ p {
 }
 
 .damage-text {
-    animation: shake 0.5s, flash-text 0.5s;
-    animation-iteration-count: 1;
+    -webkit-animation: shake 0.5s, flash-text 0.5s;
+            animation: shake 0.5s, flash-text 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
 }
 
 .damage-block {
-    animation: shake 0.5s, flash-block 0.5s;
-    animation-iteration-count: 1;
+    -webkit-animation: shake 0.5s, flash-block 0.5s;
+            animation: shake 0.5s, flash-block 0.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
     border-radius: 10px;
+}
+
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: translate(1px, 1px) rotate(0deg);
+                transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+                transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        -webkit-transform: translate(-3px, 0px) rotate(1deg);
+                transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        -webkit-transform: translate(3px, 2px) rotate(0deg);
+                transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        -webkit-transform: translate(1px, -1px) rotate(1deg);
+                transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+                transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        -webkit-transform: translate(-3px, 1px) rotate(0deg);
+                transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        -webkit-transform: translate(3px, 1px) rotate(-1deg);
+                transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        -webkit-transform: translate(-1px, -1px) rotate(1deg);
+                transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        -webkit-transform: translate(1px, 2px) rotate(0deg);
+                transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translate(1px, -2px) rotate(-1deg);
+                transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
 
 @keyframes shake {
     0% {
-        transform: translate(1px, 1px) rotate(0deg);
+        -webkit-transform: translate(1px, 1px) rotate(0deg);
+                transform: translate(1px, 1px) rotate(0deg);
     }
     10% {
-        transform: translate(-1px, -2px) rotate(-1deg);
+        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+                transform: translate(-1px, -2px) rotate(-1deg);
     }
     20% {
-        transform: translate(-3px, 0px) rotate(1deg);
+        -webkit-transform: translate(-3px, 0px) rotate(1deg);
+                transform: translate(-3px, 0px) rotate(1deg);
     }
     30% {
-        transform: translate(3px, 2px) rotate(0deg);
+        -webkit-transform: translate(3px, 2px) rotate(0deg);
+                transform: translate(3px, 2px) rotate(0deg);
     }
     40% {
-        transform: translate(1px, -1px) rotate(1deg);
+        -webkit-transform: translate(1px, -1px) rotate(1deg);
+                transform: translate(1px, -1px) rotate(1deg);
     }
     50% {
-        transform: translate(-1px, 2px) rotate(-1deg);
+        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+                transform: translate(-1px, 2px) rotate(-1deg);
     }
     60% {
-        transform: translate(-3px, 1px) rotate(0deg);
+        -webkit-transform: translate(-3px, 1px) rotate(0deg);
+                transform: translate(-3px, 1px) rotate(0deg);
     }
     70% {
-        transform: translate(3px, 1px) rotate(-1deg);
+        -webkit-transform: translate(3px, 1px) rotate(-1deg);
+                transform: translate(3px, 1px) rotate(-1deg);
     }
     80% {
-        transform: translate(-1px, -1px) rotate(1deg);
+        -webkit-transform: translate(-1px, -1px) rotate(1deg);
+                transform: translate(-1px, -1px) rotate(1deg);
     }
     90% {
-        transform: translate(1px, 2px) rotate(0deg);
+        -webkit-transform: translate(1px, 2px) rotate(0deg);
+                transform: translate(1px, 2px) rotate(0deg);
     }
     100% {
-        transform: translate(1px, -2px) rotate(-1deg);
+        -webkit-transform: translate(1px, -2px) rotate(-1deg);
+                transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@-webkit-keyframes flash-text {
+    0% {
+        color: initial;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: initial;
     }
 }
 
@@ -280,10 +361,17 @@ p {
     padding-bottom: 25px;
     border-radius: 8px;
     font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
 }
 
 .question-box img {
@@ -293,7 +381,7 @@ p {
     margin: 0 10px;
 }
 
-.question-box::before, .question-box::after {
+.question-box:before, .question-box:after {
     content: "";
     background-color: #111;
     position: absolute;
@@ -302,11 +390,11 @@ p {
     left: 0;
 }
 
-.question-box::before {
+.question-box:before {
     top: -10px;
 }
 
-.question-box::after {
+.question-box:after {
     bottom: -10px;
 }
 
@@ -325,8 +413,22 @@ p {
 }
 
 .flash {
-    animation: flash-block 1s ease-out;
-    animation-iteration-count: infinite;
+    -webkit-animation: flash-block 1s ease-out;
+            animation: flash-block 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flash-block {
+    0% {
+        background-color: initial;
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: initial;
+    }
 }
 
 @keyframes flash-block {
@@ -342,9 +444,13 @@ p {
 }
 
 #life-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 10px 0;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 #life-bar .life-block {
